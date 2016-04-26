@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hometown</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="http://cooper-union-maps-proxy.herokuapp.com/js/draw.js"></script>
+    <script>
+
+      $(document).ready(function(){
+
+        var mapOptions = {
+          zoom: 16,
+          center: new google.maps.LatLng(35.5952675, -82.5559263),
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+
+        var positions = [
+          {
+            'title':'Where the topless ladies hula hoop',
+            'map':new google.maps.LatLng(35.594611, -82.554397),
+            'link':'https://www.youtube.com/watch?v=JOJC-nFdEEM'
+          },
+          {
+            'title':'Dad`s Hair Salon',
+            'map': new google.maps.LatLng(35.596385, -82.551927),
+            'link':'http://www.anandahair.com/'
+          },
+          {
+            'title':'Where my sneaky brother loiters',
+            'map': new google.maps.LatLng(35.593908, -82.552843),
+            'link':'http://www.ashevillesaltcave.com/'
+          },
+
+          {
+            'title':'Julia`s little house',
+            'map': new google.maps.LatLng(35.598046, -82.562622),
+            'link':'https://www.linkedin.com/in/julia-krebs-moberg-36b076b7',
+            'html':'<img src=https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeHAAAAJDE1NjdhYzQ2LTNlNzAtNDc0Mi1iYWE0LWQ3NDM4NzhiNjczNw.jpg >'
+          }
+        ];
+
+        draw('map', mapOptions, positions);
+      });
+
+      // google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+        <style>
+      #map {
+        display: flex;
+        align-items: flex-start;
+        height:800px;
+        width:800px;
+        margin-left: 500px;
+        margin-top: 80px;
+      }
+
+      body {
+        background-image: url(http://static1.squarespace.com/static/559ab4f5e4b0d2540b734ca5/559acbf9e4b0851a3e9457c2/56db42da27d4bd867dd2c6e7/1457210080478/Asheville.jpeg?format=2500w);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

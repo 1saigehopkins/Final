@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hometown</title>
+    <title>Gully Block</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -13,31 +13,31 @@
       $(document).ready(function(){
 
         var mapOptions = {
-          zoom: 16,
-          center: new google.maps.LatLng(35.5952675, -82.5559263),
+          zoom: 17,
+          center: new google.maps.LatLng(36.2315712, -112.8515908),
           mapTypeId: google.maps.MapTypeId.SATELLITE
         };
 
         var positions = [
           {
             'title':'Where the topless ladies hula hoop',
-            'map':new google.maps.LatLng(35.594611, -82.554397),
+            'map':new google.maps.LatLng(36.232164, -112.8527227),
             'link':'https://www.youtube.com/watch?v=JOJC-nFdEEM'
           },
           {
             'title':'Dad`s Hair Salon',
-            'map': new google.maps.LatLng(35.596385, -82.551927),
+            'map': new google.maps.LatLng(36.2316274, -112.8503194),
             'link':'http://www.anandahair.com/'
           },
           {
             'title':'Where my sneaky brother loiters',
-            'map': new google.maps.LatLng(35.593908, -82.552843),
+            'map': new google.maps.LatLng(36.2298187, -112.8511724,559),
             'link':'http://www.ashevillesaltcave.com/'
           },
 
           {
             'title':'Julia`s little house',
-            'map': new google.maps.LatLng(35.598046, -82.562622),
+            'map': new google.maps.LatLng(36.2339592, -112.8483393),
             'link':'https://www.linkedin.com/in/julia-krebs-moberg-36b076b7',
             'html':'<img src=https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeHAAAAJDE1NjdhYzQ2LTNlNzAtNDc0Mi1iYWE0LWQ3NDM4NzhiNjczNw.jpg >'
           }
@@ -50,21 +50,64 @@
 
     </script>
         <style>
+
+
       #map {
         display: flex;
         align-items: flex-start;
         height:800px;
         width:800px;
         margin-left: 500px;
-        margin-top: 80px;
+        margin-top: 10px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      h1 {
+        width:430px;
+        font-size: 2em;
+        color: black;
+        font-family: helvetica;
+      }
+
+      h2 {
+        width:430px;
+        font-size: 1em;
+        color: #5d2b44;
+        font-family: helvetica;
       }
 
       body {
-        background-image: url(http://static1.squarespace.com/static/559ab4f5e4b0d2540b734ca5/559acbf9e4b0851a3e9457c2/56db42da27d4bd867dd2c6e7/1457210080478/Asheville.jpeg?format=2500w);
+        background-image: url(http://wisconsinwatch.org/wp-content/uploads/2013/04/Lake-Monona-1170x877.jpg);
+        background-size: cover;
       }
+
+      p {
+        text-align: right;
+        font-size: 1em;
+        color: black;
+        font-family: helvetica;
+      }
+
+      div {
+
+      }
+
     </style>
   </head>
   <body>
+    <section>
+      <h1> The Big Dry </h1>
+      <h2> It was once a large lake. Now it is a couple of stone
+        shelves. The home of birds that you can't see. I am a jesus figure.
+         I can show you the ultimate truth. I know the difference in right and wrong ways.</h2>
+    </section>
     <div id="map"></div>
+    <div id="mystery"><p>what is this? what is going to happen over here? is everything going to
+       be OK? are you going to be a legend? a success? You can effin do it all baby!!!!!</p></div>
   </body>
 </html>

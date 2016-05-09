@@ -8,6 +8,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="http://cooper-union-maps-proxy.herokuapp.com/js/draw.js"></script>
+
     <script>
 
       $(document).ready(function(){
@@ -19,27 +20,42 @@
         };
 
         var positions = [
+
           {
-            'title':'Where the topless ladies hula hoop',
-            'map':new google.maps.LatLng(36.232164, -112.8527227),
-            'link':'https://www.youtube.com/watch?v=JOJC-nFdEEM'
-          },
-          {
-            'title':'Dad`s Hair Salon',
+            'title':'Coast of a Dried Up Lake',
             'map': new google.maps.LatLng(36.2316274, -112.8503194),
-            'link':'http://www.anandahair.com/'
-          },
-          {
-            'title':'Where my sneaky brother loiters',
-            'map': new google.maps.LatLng(36.2298187, -112.8511724,559),
-            'link':'http://www.ashevillesaltcave.com/'
+            'link':'http://1saigehopkins.github.io/finalLink1/'
           },
 
           {
-            'title':'Julia`s little house',
-            'map': new google.maps.LatLng(36.2339592, -112.8483393),
+            'title':'Big Shade',
+            'map':new google.maps.LatLng(36.232164, -112.8527227),
+            'link':'http://1saigehopkins.github.io/finalLink2'
+          },
+
+          {
+            'title':'Ledge on Edge',
+            'map': new google.maps.LatLng(36.228545, -112.848686),
+            'link':'http://1saigehopkins.github.io/finalLink3/'
+          },
+
+          {
+            'title':'Confident Hole',
+            'map': new google.maps.LatLng(36.236901, -112.853009),
+            'link':'http://1saigehopkins.github.io/finalLink4/'
+          },
+
+          {
+            'title':'Belly Fold Portal',
+            'map': new google.maps.LatLng(36.236586, -112.848782),
+            'link':'http://1saigehopkins.github.io/finalLink5/'
+          },
+
+          {
+            'title':' ',
+            'map': new google.maps.LatLng(36.234216, -112.853889),
             'link':'https://www.linkedin.com/in/julia-krebs-moberg-36b076b7',
-            'html':'<img src=https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeHAAAAJDE1NjdhYzQ2LTNlNzAtNDc0Mi1iYWE0LWQ3NDM4NzhiNjczNw.jpg >'
+            'html':'<img src=https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13124737_1070176263053583_2383587999142969319_n.jpg?oh=9b166fade9ea3cf76347f10bda0431f3&oe=57A110CE >'
           }
         ];
 
@@ -49,7 +65,8 @@
       // google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
-        <style>
+
+    <style>
 
 
       #map {
@@ -84,6 +101,7 @@
       body {
         background-image: url(http://wisconsinwatch.org/wp-content/uploads/2013/04/Lake-Monona-1170x877.jpg);
         background-size: cover;
+        background-position: center;
       }
 
       p {
@@ -96,9 +114,62 @@
       div {
 
       }
+                          /*phone format*/
+      @media all and (min-width:320px) and (max-width:460px) {
+
+	body {
+		font-size:1em;
+		background-color:orange;
+    background-image:url(https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13131211_1070044243066785_5190568253987008896_o.jpg);
+    background-size: cover;
+    width: 280px;
+
+	}
+
+  #map {
+    display: flex;
+    align-items: flex-start;
+    height:270px;
+    width:300px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 30px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1 {
+    width:320px;
+    font-size: 2em;
+    color: black;
+    font-family: helvetica;
+  }
+
+  h2 {
+    width:250px;
+    font-size: 1.5em;
+    color: #5d2b44;
+    font-family: helvetica;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1em;
+    color: black;
+    font-family: helvetica;
+  }
+
+
+	}
 
     </style>
+
   </head>
+
   <body>
     <section>
       <h1> The Big Dry </h1>
